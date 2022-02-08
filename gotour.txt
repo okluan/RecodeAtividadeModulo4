@@ -1,0 +1,58 @@
+create schema gotour;
+
+use gotour;
+
+create table Roteiro(
+id int primary key auto_increment,
+nome varchar(50),
+cpf int,
+cidade varchar(50),
+uf varchar(50),
+valor double,
+hotel varchar(50),
+embarque varchar(50),
+desembarque varchar(50),
+parcelas int,
+pessoas int
+);
+
+
+create table Contato(
+id int primary key auto_increment,
+nome varchar(50),
+email varchar(50),
+logradouro varchar(50),
+bairro varchar(50),
+cidade varchar(50),
+uf varchar(50),
+datadeNascimento varchar(50),
+mensagem varchar(250));
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+	
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+
+
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
